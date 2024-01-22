@@ -1,3 +1,4 @@
+/* [START] Main Rules */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,3 +12,43 @@
 	--dark-brown: #382314;
 	--md-brown: #92857a;
 }
+body {
+	background-color: var(--cream);
+	font-family: 'DM Sans', sans-serif;
+	height: 100dvh;
+}
+/* [END] Main Rules */
+
+/* [START] Expenses Component */
+main {
+	max-width: 33.75rem;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+main header {
+	background-color: var(--orange);
+	border-radius: 1.25rem;
+	overflow: hidden;
+	padding: 1.688rem 2rem 1.563rem 2.438rem;
+}
+main header h2 {
+	float: left;
+	color: var(--white);
+	font-size: 2rem;
+	line-height: 1.3018;
+}
+main header h2 span {
+	font-weight: 400;
+	color: white;
+	font-size: 0.5625em;
+	line-height: 1.3022;
+}
+main header img {
+	float: right;
+	position: relative;
+	top: 2.6rem;
+	transform: translateY(-50%);
+}
+/* [END] Expenses Component */
