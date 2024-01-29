@@ -54,7 +54,7 @@ main header img {
 main section {
 	background-color: var(--white);
 	border-radius: 1.25rem;
-	padding: 2rem 2.5rem;
+	padding: 2rem 2.5rem 2.563rem;
 	margin-top: 1.5rem;
 }
 main section h3 {
@@ -119,6 +119,43 @@ main section .chart .column h4 {
 	font-weight: 400;
 	color: var(--md-brown);
 	font-size: 0.938rem;
+}
+main section .line {
+	height: 0.125rem;
+	border-radius: 1rem;
+	background-color: var(--cream);
+	margin: 2rem 0;
+}
+main section footer h3 {
+	color: var(--md-brown);
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.3022;
+}
+main section footer div {
+	overflow: hidden;
+	height: 3.905rem;
+}
+main section footer .amount {
+	float: left;
+	color: var(--dark-brown);
+	font-size: 3rem;
+	line-height: 1.302;
+}
+main section footer .diff {
+	float: right;
+	color: var(--dark-brown);
+	font-size: 1.125rem;
+	line-height: 1.3022;
+	font-weight: 700;
+	text-align: right;
+	position: relative;
+	top: 100%;
+	transform: translateY(-100%);
+}
+main section footer .diff span {
+	color: var(--md-brown);
+	font-weight: 400;
 }
 
 /* [END] Expenses Component */
