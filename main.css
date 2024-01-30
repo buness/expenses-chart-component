@@ -17,6 +17,9 @@ body {
 	font-family: 'DM Sans', sans-serif;
 	height: 100dvh;
 }
+.seo {
+	display: none;
+}
 /* [END] Main Rules */
 
 /* [START] Expenses Component */
@@ -54,8 +57,11 @@ main header img {
 main section {
 	background-color: var(--white);
 	border-radius: 1.25rem;
-	padding: 2rem 2.5rem 2.563rem;
+	padding: 2rem 0 2.563rem;
 	margin-top: 1.5rem;
+}
+main section > * {
+	padding: 0 2.5rem;
 }
 main section h3 {
 	color: var(--dark-brown);
@@ -80,6 +86,9 @@ main section .chart .column .bar {
 	position: relative;
 	margin-bottom: 0.5rem;
 	cursor: pointer;
+}
+main section .chart .column .bar::before {
+	content: ;
 }
 main section .chart .column .bar .progress {
 	background-color: var(--orange);
