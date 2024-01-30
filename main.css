@@ -70,7 +70,7 @@ main section h3 {
 }
 main section .chart {
 	overflow: hidden;
-	margin-top: 4.125rem;
+	padding-top: 4.125rem;
 }
 main section .chart .column {
 	float: left;
@@ -86,9 +86,23 @@ main section .chart .column .bar {
 	position: relative;
 	margin-bottom: 0.5rem;
 	cursor: pointer;
+	position: relative;
 }
 main section .chart .column .bar::before {
-	content: ;
+	content: attr(data-amount);
+	background-color: var(--dark-brown);
+	color: white;
+	font-size: 1.125rem;
+	padding: 0.5rem;
+	border-radius: 0.313rem;
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	display: none;
+}
+main section .chart .column .bar:hover::before {
+	display: block;
 }
 main section .chart .column .bar .progress {
 	background-color: var(--orange);
